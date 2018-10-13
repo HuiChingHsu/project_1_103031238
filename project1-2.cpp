@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
 	}
 	else cout << "Unable to open file" << endl;
 
-    for(int i=0; i<row_bound; i++){ //Is it possible that a value on the boundary becomes a peak value?
+    for(int i=0; i<row_bound; i++){
         for(int j=0; j<col_bound; j++){
             row_tmp = -1, col_tmp = -1;
 
@@ -117,7 +117,7 @@ int main(int argc, char *argv[]) {
 
         }
     }
-
+    //data_name = "final.peak";
     data_name = "./"+id+"./final.peak";
     output.open(data_name,ios::out);
 
